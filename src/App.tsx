@@ -4,6 +4,7 @@ import {useAppDispatch, useAppSelector} from "./hooks/redux";
 import {userSlice} from "./store/reducers/UserSlice";
 import {fetchUsers} from "./store/reducers/ActionCreators";
 import PostContainer from "./components/PostContainer";
+import PostContainer2 from "./components/PostContainer2";
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
             {/*{error && <h1>{error}</h1>}*/}
             {/*{JSON.stringify(users, null, 2)}*/}
 
-            <PostContainer/>
+            <div style={{display: 'flex'}}>
+                <PostContainer/>
+                <PostContainer2/>
+            </div>
         </div>
     );
 }
